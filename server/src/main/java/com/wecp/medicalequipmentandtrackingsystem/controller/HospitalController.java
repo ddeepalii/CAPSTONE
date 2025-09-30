@@ -22,31 +22,37 @@ public class HospitalController {
     @PostMapping("/api/hospital/create")
     public ResponseEntity<Hospital> createHospital(@RequestBody Hospital hospital) {
         // create hospital and return the created hospital with status code 201 = CREATED;
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @GetMapping("/api/hospitals")
     public ResponseEntity<List<Hospital>> getAllHospitals() {
         // return all hospitals with response code = 200 ok
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PostMapping("/api/hospital/equipment")
     public ResponseEntity<Equipment> addEquipment(@RequestParam Long hospitalId, @RequestBody Equipment equipment) {
         // add equipment to the hospital and return the added equipment with status code 201 = CREATED;
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @GetMapping("/api/hospital/equipment/{hospitalId}")
     public ResponseEntity<List<Equipment>> getAllEquipmentsOfHospital(@PathVariable Long hospitalId) {
         // return all equipments of hospital with response code = 200 OK
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PostMapping("/api/hospital/maintenance/schedule")
     public ResponseEntity<Maintenance> scheduleMaintenance
             (@RequestParam Long equipmentId, @RequestBody Maintenance maintenance) {
         // schedule maintenance for the equipment and return the scheduled maintenance with status code 201 = CREATED;
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PostMapping("/api/hospital/order")
     public ResponseEntity<Order> placeOrder(@RequestParam Long equipmentId, @RequestBody Order order) {
         // place order for the equipment and return the placed order with status code 201 = CREATED;
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }
