@@ -10,6 +10,12 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './schedule-maintenance.component.html',
   styleUrls: ['./schedule-maintenance.component.scss']
 })
+<<<<<<< HEAD
 export class ScheduleMaintenanceComponent 
+=======
+export class ScheduleMaintenanceComponent {
+  itemForm!: FormGroup;
+}
+>>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
 //todo: complete missing code
 
