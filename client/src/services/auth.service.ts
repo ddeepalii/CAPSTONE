@@ -16,7 +16,7 @@ export class AuthService {
   providedIn: 'root',
 })
 export class AuthService {
->>>>>>> mayank
+
   private token: string | null = null;
   private isLoggedIn: boolean = false;
 
@@ -24,8 +24,7 @@ export class AuthService {
 
   // Method to save token received from login
   saveToken(token: string) {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   //please complete this
   }
    SetRole(role:any)

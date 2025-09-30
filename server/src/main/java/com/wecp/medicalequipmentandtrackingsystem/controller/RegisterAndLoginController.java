@@ -1,10 +1,5 @@
 package com.wecp.medicalequipmentandtrackingsystem.controller;
-<<<<<<< HEAD
-
-
-=======
  
->>>>>>> mayank
 import com.wecp.medicalequipmentandtrackingsystem.dto.LoginRequest;
 import com.wecp.medicalequipmentandtrackingsystem.dto.LoginResponse;
 import com.wecp.medicalequipmentandtrackingsystem.entitiy.User;
