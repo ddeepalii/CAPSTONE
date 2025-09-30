@@ -1,29 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { HttpService } from '../../services/http.service';
-import { AuthService } from '../../services/auth.service';
-
-
-@Component({
-  selector: 'app-createhospital',
-  templateUrl: './createhospital.component.html',
-  styleUrls: ['./createhospital.component.scss']
-})
-export class CreatehospitalComponent implements OnInit {
- 
-  //todo: Complete missing code..
-  
-}
-=======
-=======
->>>>>>> mayank
 import { Subscription } from 'rxjs/internal/Subscription';
 import { HttpService } from '../../services/http.service';
 import { Hospital } from '../model/Service';
 import { AuthService } from '../../services/auth.service';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-createhospital',
