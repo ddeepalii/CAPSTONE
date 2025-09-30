@@ -1,6 +1,6 @@
 package com.wecp.medicalequipmentandtrackingsystem.service;
 
-
+import com.wecp.medicalequipmentandtrackingsystem.config.UserInfoUserDetails;
 import com.wecp.medicalequipmentandtrackingsystem.entitiy.User;
 import com.wecp.medicalequipmentandtrackingsystem.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +12,37 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
+@Service
+public class UserService implements UserDetailsService{
+    @Autowired
+    private UserRepository userRepository;
 
-public class UserService {
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
-    
+    public User registerUser(User user) {
+        if (getUserByUsername(user.getUsername()) == null) {
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
+            return userRepository.save(user);
+        } else {
+            return null;
+        }
+
+    }
+
+    public User getUserByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User user = userRepository.findByUsername(username);
+        if (user == null) {
+            throw new UsernameNotFoundException(username + "is not found");
+        }
+        return new UserInfoUserDetails(user);
+    }
+
+   
+
 }
