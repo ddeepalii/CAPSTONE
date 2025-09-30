@@ -11,12 +11,18 @@ import { HttpService } from '../../services/http.service';
 })
 export class RegistrationComponent 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> mayank
 {
   itemForm!: FormGroup;
 }
 
+<<<<<<< HEAD
 >>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
+=======
+>>>>>>> mayank
 //doto: complete missing code..
 
 

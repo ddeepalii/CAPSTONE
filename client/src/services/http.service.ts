@@ -6,6 +6,7 @@ import { AuthService } from './auth.service';
 
 @Injectable({
 <<<<<<< HEAD
+<<<<<<< HEAD
   providedIn: 'root'
 })
 export class HttpService {
@@ -14,6 +15,8 @@ export class HttpService {
   
 }
 =======
+=======
+>>>>>>> mayank
   providedIn: 'root',
 })
 export class HttpService {
@@ -142,5 +145,9 @@ export class HttpService {
       this.getRequestOptions()
     );
   }
+<<<<<<< HEAD
 }
 >>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
+=======
+}
+>>>>>>> mayank

@@ -5,6 +5,7 @@ import { HttpService } from '../../services/http.service';
 import { AuthService } from '../../services/auth.service';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 @Component({
@@ -18,6 +19,8 @@ export class LoginComponent implements OnInit {
 
 
 =======
+=======
+>>>>>>> mayank
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -78,5 +81,9 @@ export class LoginComponent implements OnInit {
   registration() {
     this.router.navigateByUrl('/registration');
   }
+<<<<<<< HEAD
 }
 >>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
+=======
+}
+>>>>>>> mayank

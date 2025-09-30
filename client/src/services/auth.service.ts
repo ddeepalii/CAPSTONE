@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable({
 <<<<<<< HEAD
+<<<<<<< HEAD
   providedIn: 'root'
 })
 export class AuthService {
@@ -11,6 +12,11 @@ export class AuthService {
 })
 export class AuthService {
 >>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
+=======
+  providedIn: 'root',
+})
+export class AuthService {
+>>>>>>> mayank
   private token: string | null = null;
   private isLoggedIn: boolean = false;
 
@@ -18,6 +24,7 @@ export class AuthService {
 
   // Method to save token received from login
   saveToken(token: string) {
+<<<<<<< HEAD
 <<<<<<< HEAD
   //please complete this
   }
@@ -43,6 +50,8 @@ export class AuthService {
    }
 }
 =======
+=======
+>>>>>>> mayank
     this.token = token;
     this.isLoggedIn = true;
     // Optionally, you can save the token to local storage or a cookie for persistence
@@ -79,5 +88,9 @@ export class AuthService {
     this.token = null;
     this.isLoggedIn = false;
   }
+<<<<<<< HEAD
 }
 >>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
+=======
+}
+>>>>>>> mayank
