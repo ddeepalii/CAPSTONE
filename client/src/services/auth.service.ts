@@ -1,22 +1,9 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-<<<<<<< HEAD
-<<<<<<< HEAD
-  providedIn: 'root'
-})
-export class AuthService {
-
-=======
   providedIn: 'root',
 })
 export class AuthService {
->>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
-=======
-  providedIn: 'root',
-})
-export class AuthService {
-
   private token: string | null = null;
   private isLoggedIn: boolean = false;
 
@@ -24,33 +11,6 @@ export class AuthService {
 
   // Method to save token received from login
   saveToken(token: string) {
-
-  //please complete this
-  }
-   SetRole(role:any)
-  {
-     //please complete this
-  }
-  get getRole ():string|null
-  {
-    return localStorage.getItem('role');
-  }
-  // Method to retrieve login status
-  get getLoginStatus(): boolean {
-  
-      //please complete this
-   
-  }
-  getToken(): string | null {
-  //please complete this
-  }
-  logout(){
-    //please complete this
-   }
-}
-=======
-=======
->>>>>>> mayank
     this.token = token;
     this.isLoggedIn = true;
     // Optionally, you can save the token to local storage or a cookie for persistence
@@ -87,9 +47,4 @@ export class AuthService {
     this.token = null;
     this.isLoggedIn = false;
   }
-<<<<<<< HEAD
 }
->>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
-=======
-}
->>>>>>> mayank

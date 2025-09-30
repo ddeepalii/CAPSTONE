@@ -4,23 +4,6 @@ import { Router } from '@angular/router';
 import { HttpService } from '../../services/http.service';
 import { AuthService } from '../../services/auth.service';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
-})
-export class LoginComponent implements OnInit {
- ///todo: complete missing code
-}
-
-
-=======
-=======
->>>>>>> mayank
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -81,9 +64,4 @@ export class LoginComponent implements OnInit {
   registration() {
     this.router.navigateByUrl('/registration');
   }
-<<<<<<< HEAD
 }
->>>>>>> d43bfdeb1e26f399b8fed860e920807a6aa2bee4
-=======
-}
->>>>>>> mayank
