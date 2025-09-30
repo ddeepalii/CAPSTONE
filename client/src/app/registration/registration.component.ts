@@ -10,6 +10,13 @@ import { HttpService } from '../../services/http.service';
   styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent 
+<<<<<<< HEAD
+=======
+{
+  itemForm!: FormGroup;
+}
+
+>>>>>>> 3ca6604f428921f2ad944ca7669240bc7a2f3df6
 //doto: complete missing code..
 
 
