@@ -9,6 +9,11 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './requestequipment.component.html',
   styleUrls: ['./requestequipment.component.scss']
 })
-export class RequestequipmentComponent 
+export class RequestequipmentComponent implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  
+}
 //todo: complete missing code..
 
