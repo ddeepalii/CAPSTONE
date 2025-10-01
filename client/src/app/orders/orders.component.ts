@@ -9,7 +9,16 @@ import { AuthService } from '../../services/auth.service';
   templateUrl: './orders.component.html',
   styleUrls: ['./orders.component.scss']
 })
+<<<<<<< HEAD
 export class OrdersComponent implements 
+=======
+export class OrdersComponent implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  
+}
+>>>>>>> bharat
  //todo: complete missing code..
  
  
