@@ -13,8 +13,14 @@ import { ScheduleMaintenanceComponent } from './schedule-maintenance/schedule-ma
 import { RequestequipmentComponent } from './requestequipment/requestequipment.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { OrdersComponent } from './orders/orders.component';
+import { HomepageComponent } from './homepage/homepage.component';
+// import { TeamComponent } from './team/team.component';
+// // import { StatusTechinicanComponent } from './status-techinican/status-techinican.component';
+// import { HomepageComponent } from './homepage/homepage.component';
+// import { MeetTeamComponent } from './meet-team/meet-team.component';
 
 const routes: Routes = [
+  { path:'homepage',component:HomepageComponent},
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'dashboard', component: DashbaordComponent },
@@ -22,8 +28,13 @@ const routes: Routes = [
   { path: 'schedule-maintenance', component: ScheduleMaintenanceComponent },  
   { path: 'requestequipment', component: RequestequipmentComponent },  
   { path: 'maintenance', component: MaintenanceComponent },  
-  { path: 'orders', component: OrdersComponent },  
+  { path: 'orders', component: OrdersComponent },
+  // { path: 'team', component: TeamComponent },
+  // {path:'meet-team',component:MeetTeamComponent},
+  // {path:'status-techinican',component:StatusTechinicanComponent} , 
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  // { path: 'team', component: TeamComponent },  
+  { path: '', redirectTo: '/homepage', pathMatch: 'full' },
 
   { path: '**', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
