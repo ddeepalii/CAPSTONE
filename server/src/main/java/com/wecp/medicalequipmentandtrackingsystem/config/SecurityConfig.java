@@ -1,9 +1,8 @@
 package com.wecp.medicalequipmentandtrackingsystem.config;
- 
+
 import com.wecp.medicalequipmentandtrackingsystem.jwt.JwtRequestFilter;
 import com.wecp.medicalequipmentandtrackingsystem.service.UserService;
- 
- 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
