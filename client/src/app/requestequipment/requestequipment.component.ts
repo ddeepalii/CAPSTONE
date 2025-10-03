@@ -27,7 +27,7 @@ export class RequestequipmentComponent implements OnInit {
   responseMessage: any;
   equipmentList: any = [];
   isClick: boolean = false;
-  //creates a form group with following fields
+
   constructor(
     public router: Router,
     public httpService: HttpService,
@@ -64,7 +64,7 @@ export class RequestequipmentComponent implements OnInit {
       }
     );
   }
-  //checks if date is in right pattern and selectedDate should be previous to today
+
   dateValidator(control: AbstractControl): ValidationErrors | null {
     const datePattern = /^\d{4}-\d{2}-\d{2}$/;
     const selectedDate = new Date(control.value);
