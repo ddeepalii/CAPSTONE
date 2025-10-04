@@ -14,6 +14,7 @@ import { RequestequipmentComponent } from './requestequipment/requestequipment.c
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { OrdersComponent } from './orders/orders.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { TeamComponent } from './team/team.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, data: { title: 'MediSphere-Login' } },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'maintenance', component: MaintenanceComponent },  
   { path: 'orders', component: OrdersComponent },  
   { path: 'homepage', component: HomepageComponent },  
+  { path: 'team', component: TeamComponent },  
   { path: '', redirectTo: '/homepage', pathMatch: 'full' },
 
   // { path: '**', redirectTo: '/dashboard', pathMatch: 'full' },
