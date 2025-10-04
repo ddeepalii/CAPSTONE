@@ -144,10 +144,10 @@ export class RequestequipmentComponent implements OnInit {
     this.showMessage = false;
     if (this.isClick == false) {
       this.isClick = true;
-      // this.router.navigate(['/requestequipment'], { fragment: 'div2' });
+      this.router.navigate(['/requestequipment'], { fragment: 'div2' });
     } else {
       this.isClick = false;
-      // this.router.navigate(['/requestequipment']);
+      this.router.navigate(['/requestequipment']);
     }
   }
 

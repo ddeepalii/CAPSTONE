@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {
   AbstractControl,
   FormBuilder,
+  FormControl,
   FormGroup,
   ValidationErrors,
   Validators,
@@ -38,17 +39,17 @@ export class ScheduleMaintenanceComponent implements OnInit {
     this.itemForm = this.formBuilder.group({
       scheduledDate: [
         this.formModel.scheduledDate,
-        [Validators.required, this.dateValidator, this.dateValidator2],
+        [Validators.required, this.dateValidator],
       ],
       completedDate: [
         this.formModel.completedDate,
-        [Validators.required, this.dateValidator, this.dateValidator2],
+        [Validators.required, this.dateValidator],
       ],
       description: [this.formModel.description, [Validators.required]],
       status: [this.formModel.status, [Validators.required]],
       equipmentId: [this.formModel.equipmentId, [Validators.required]],
       hospitalId: [this.formModel.hospitalId, [Validators.required]],
-    });
+    },{validators:this.dateValidator2});
   }
   ngOnInit(): void {
     this.getHospital();
@@ -63,11 +64,13 @@ export class ScheduleMaintenanceComponent implements OnInit {
     }
     return null;
   }
-  dateValidator2(control: AbstractControl): ValidationErrors | null {
-    const currentDate = new Date();
-    const selectedDate = new Date(control.value);
-    if (selectedDate < currentDate) {
-      return { invalidDate: true };
+
+  dateValidator2(formCon: FormControl
+  ): ValidationErrors | null {
+    const scheduledDate = formCon.get('scheduledDate')?.value;
+    const deadline = formCon.get('completedDate')?.value;
+    if (deadline < scheduledDate) {
+      return { invalidDateRangeCheck: true };
     }
     return null;
   }
@@ -91,6 +94,7 @@ export class ScheduleMaintenanceComponent implements OnInit {
   onSubmit() {
     
       if (this.itemForm.valid) {
+        alert("sucess")
         this.showError = false;
 
         this.httpService
