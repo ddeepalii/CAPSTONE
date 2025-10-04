@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +20,9 @@ import { ScheduleMaintenanceComponent } from './schedule-maintenance/schedule-ma
 import { RequestequipmentComponent } from './requestequipment/requestequipment.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { OrdersComponent } from './orders/orders.component';
+import { HomepageComponent } from './homepage/homepage.component';
+
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { OrdersComponent } from './orders/orders.component';
       ScheduleMaintenanceComponent,
       RequestequipmentComponent,
       MaintenanceComponent,
-      OrdersComponent
+      OrdersComponent,
+      HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,8 @@ import { OrdersComponent } from './orders/orders.component';
     ReactiveFormsModule,
     HttpClientModule 
   ],
-  providers: [HttpService,HttpClientModule ],
+  providers:  [HttpService,HttpClientModule ], 
+              
   bootstrap: [AppComponent]
 })
 export class AppModule { }
